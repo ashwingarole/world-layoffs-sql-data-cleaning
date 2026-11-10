@@ -1,13 +1,13 @@
 # World Layoffs Data Cleaning Project (MySQL)
 
-## 📌 Project Overview
+##  Project Overview
 This project focuses on cleaning and standardizing a raw, unorganized dataset containing global tech layoff records using MySQL. The raw data contained duplicate entries, inconsistent naming conventions, structural nulls, and incorrectly formatted dates. 
 
 The goal was to transform this raw CSV extract into a reliable, consistent, and analysis-ready database table.
 
 ---
 
-## 🛠️ Data Cleaning Process & SQL Techniques
+##  Data Cleaning Process & SQL Techniques
 
 ### 1. Creating Staging Tables
 To protect the original raw records from unintended data loss, I created duplicate staging tables (`layoffs_staging` and `layoffs_staging2`) before executing any data modification queries.
@@ -31,14 +31,14 @@ To protect the original raw records from unintended data loss, I created duplica
 
 ---
 
-## 💻 Tech Stack
+##  Tech Stack
 * **Database:** MySQL
 * **Tool:** MySQL Workbench
 * **Key SQL Concepts:** CTEs, Window Functions (`ROW_NUMBER()`), Self-Joins, String Manipulation (`TRIM`), Date Conversion (`STR_TO_DATE`), DDL (`ALTER TABLE`), DML (`UPDATE`, `DELETE`).
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 * `layoffs.csv`: Raw, uncleaned dataset.
 * `data_cleaning_queries.sql`: Complete MySQL script containing every step of the cleaning process.
 * `README.md`: Project documentation and workflow overview.
